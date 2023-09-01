@@ -1,8 +1,16 @@
-# React + Vite
+# Password Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a application to generate the random `Password` for website, its very secure, as it randomly generate the new password every time.
 
-Currently, two official plugins are available:
+## Feature
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `Range` - from the `6` to `24` character length password can be generated dynamically.
+- `Number Allowed` - you can generate the password using number for creating the secure password
+- `Special Character` - you can add the following character `!@#^{}+=-_` inside the password by checking the box
+- `Copy Button` - password can be copied from the input field without using the copy functionality or shortcut like `ctrl + c`.
+
+## Optimization
+
+`useCallback` Hooks allowed to store the function inside the react memory in the `.cache` folder, which can be used again without hitting the performance of the application. For, small application like this, we do not require the this type of method. However, For learning purpose it is the best application for using it.
+
+`useEffect` Hook allowed to run the method at the initial render. we do have the password at the initial rendering of the application. However, when the `Number checkbox`, `character checkbox`was checked or `Range of character` Range of character changes. it runs again.
