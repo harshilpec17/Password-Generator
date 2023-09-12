@@ -14,3 +14,15 @@ It is a application to generate the random `Password` for website, its very secu
 `useCallback` Hooks allowed to store the function inside the react memory in the `.cache` folder, which can be used again without hitting the performance of the application. For, small application like this, we do not require the this type of method. However, For learning purpose it is the best application for using it.
 
 `useEffect` Hook allowed to run the method at the initial render. we do have the password at the initial rendering of the application. However, when the `Number checkbox`, `character checkbox`was checked or `Range of character` Range of character changes. it runs again.
+
+## Technologies use
+
+- React
+- vite
+- Netlify
+
+# Let's try this
+
+## [Click for Password](https://password-harshilsuthar.netlify.app/)
+
+![Image](./snapshot.png)
